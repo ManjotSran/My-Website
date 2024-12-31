@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio | Manjot Singh Sran</title>
+  <!-- Favicon -->
+  <link rel="icon" href="https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg" />
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ======= NAVBAR ======= -->
+  <nav class="navbar">
+    <div class="nav-logo">Manjot Singh Sran</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-toggle" id="mobile-toggle">&#9776;</div>
+  </nav>
+
+  <!-- ======= HERO SECTION ======= -->
+  <section class="hero-section" id="home">
+    <div class="hero-content">
+      <h1>Hello, I'm <span>Manjot Singh Sran</span></h1>
+      <p>I’m a Master’s student in Computer Science with a strong interest in Multi-Modal AI.</p>
+      <a href="#projects" class="btn-primary">View My Projects</a>
+    </div>
+  </section>
+
+  <!-- ======= ABOUT SECTION ======= -->
+  <section class="about-section" id="about">
+    <div class="section-title">
+      <h2>About Me</h2>
+      <div class="line"></div>
+    </div>
+    <div class="about-content">
+      <img src="https://pbs.twimg.com/profile_images/1821151612762533888/uX290YWA_400x400.jpg" alt="Manjot Photo" class="about-img"/>
+      <div class="about-text">
+        <h3>I'm a Passionate AI & ML Researcher</h3>
+        <p>
+          Currently pursuing my Master’s in Applied Computer Science at The University of Winnipeg, 
+          focusing on <strong>Multi-Modal AI</strong>—integrating text, audio, and visual data for advanced 
+          machine learning models. I hold a B.Tech. in CSE (Distinction) from IKG Punjab Technical University (NBA Tier-1 accredited).
+        </p>
+        <p>
+          I have hands-on experience with machine learning, data science, web technologies, and blockchain, thanks to multiple industrial trainings and personal projects. 
+          My research interests include multi-modal fusion strategies, explainable AI, and large language models.
+        </p>
+        <a href="https://github.com/your-github-username" class="btn-secondary" target="_blank">Check my GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= SKILLS SECTION ======= -->
+  <section class="skills-section" id="skills">
+    <div class="section-title">
+      <h2>Skills</h2>
+      <div class="line"></div>
+    </div>
+    <div class="skills-container">
+      <div class="skill-card">
+        <h3>Programming Languages</h3>
+        <p>Python, C, C++, JavaScript, Solidity</p>
+      </div>
+      <div class="skill-card">
+        <h3>Web Development</h3>
+        <p>HTML, CSS, Bootstrap, Django, Flask, jQuery, XML</p>
+      </div>
+      <div class="skill-card">
+        <h3>Networking</h3>
+        <p>Cisco Packet Tracer</p>
+      </div>
+      <div class="skill-card">
+        <h3>Data Analysis</h3>
+        <p>Excel, Spreadsheet, SQL, NumPy, Pandas, Matplotlib</p>
+      </div>
+      <div class="skill-card">
+        <h3>Machine/Deep Learning</h3>
+        <p>Scikit-learn, Theano, TensorFlow, PyTorch</p>
+      </div>
+      <div class="skill-card">
+        <h3>Communication Skills</h3>
+        <p>Strong written and verbal communication</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= PROJECTS SECTION ======= -->
+  <section class="projects-section" id="projects">
+    <div class="section-title">
+      <h2>Projects</h2>
+      <div class="line"></div>
+    </div>
+    <div class="projects-container">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <!-- Image removed -->
+        <div class="project-info">
+          <h3>Audio-Visual Fusion for Multi-Modal Emotion Recognition</h3>
+          <p>Comparative Analysis of Fusion Strategies (Early, Mid, Late) using Wav2Vec2 and VideoMAE.</p>
+          <button class="btn-project" data-modal-target="#modal1">View Details</button>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="project-card">
+        <!-- Image removed -->
+        <div class="project-info">
+          <h3>Hateful Meme Detection</h3>
+          <p>Combined text & image features with RoBERTa Large, ViT, CLIP, and advanced fusion techniques.</p>
+          <button class="btn-project" data-modal-target="#modal2">View Details</button>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="project-card">
+        <!-- Image removed -->
+        <div class="project-info">
+          <h3>Multi-Modal Emotion Classification on MELD Dataset</h3>
+          <p>Implemented RoBERTa & Audio Spectrogram Transformer for textual/audio feature extraction.</p>
+          <button class="btn-project" data-modal-target="#modal3">View Details</button>
+        </div>
+      </div>
+      <!-- Project 4 -->
+      <div class="project-card">
+        <!-- Image removed -->
+        <div class="project-info">
+          <h3>Sentiment & Emotion Classification on MELD</h3>
+          <p>Used context from past/future utterances with Transformers, surpassing baseline benchmarks.</p>
+          <button class="btn-project" data-modal-target="#modal4">View Details</button>
+        </div>
+      </div>
+      <!-- Project 5 -->
+      <div class="project-card">
+        <!-- Image removed -->
+        <div class="project-info">
+          <h3>Cricket Score Predictor</h3>
+          <p>Random Forest Regressor-based model with ~92.70% test accuracy, deployed via Streamlit.</p>
+          <button class="btn-project" data-modal-target="#modal5">View Details</button>
+        </div>
+      </div>
+      <!-- Project 6 -->
+      <div class="project-card">
+        <!-- Image removed -->
+        <div class="project-info">
+          <h3>KD-tree Construction & Search Algorithms</h3>
+          <p>Implemented range, exact, and nearest neighbor search; compared vs. linear search methods.</p>
+          <button class="btn-project" data-modal-target="#modal6">View Details</button>
+        </div>
+      </div>
+      <!-- Project 7 -->
+      <div class="project-card">
+        <!-- Image removed -->
+        <div class="project-info">
+          <h3>Employee Management Systems Web Application</h3>
+          <p>Built with Python & Django, offering CRUD functionality on an SQLite database.</p>
+          <button class="btn-project" data-modal-target="#modal7">View Details</button>
+        </div>
+      </div>
+      <!-- Project 8 -->
+      <div class="project-card">
+        <!-- Image removed -->
+        <div class="project-info">
+          <h3>Video Game with Pygame</h3>
+          <p>Created collision-avoidance gameplay, scoring system, and progression mechanics.</p>
+          <button class="btn-project" data-modal-target="#modal8">View Details</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= MODALS FOR PROJECT DETAILS ======= -->
+  <!-- Modal 1: Audio-Visual Fusion -->
+  <div class="modal" id="modal1">
+    <div class="modal-content">
+      <span class="modal-close" data-close-button>&times;</span>
+      <h2>Exploring Audio-Visual Fusion: Comparative Analysis</h2>
+      <p>
+        • Explored audio-visual fusion using audio and video modalities.<br/>
+        • Conducted a comparative analysis of fusion strategies (Early, Mid, Late) for multimodal emotion recognition using Wav2Vec2 and VideoMAE.<br/>
+        • Achieved 95.39% accuracy on RAVDESS and 86.84% accuracy on CREMA-D with Late Fusion techniques.<br/>
+        • Demonstrated superiority of decision-level fusion approaches in multimodal tasks.
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal 2: Hateful Meme Detection -->
+  <div class="modal" id="modal2">
+    <div class="modal-content">
+      <span class="modal-close" data-close-button>&times;</span>
+      <h2>Hateful Meme Detection Using MultiOff Dataset</h2>
+      <p>
+        • Worked with the MultiOff Dataset for the detection of hateful memes, using textual and image modalities.<br/>
+        • Implemented two approaches: (1) RoBERTa Large + ViT, (2) OpenAI’s CLIP model to handle both modalities.<br/>
+        • Applied concatenation fusion and performed hyperparameter tuning to optimize classification results.<br/>
+        • Visualized attention maps for Explainable AI, highlighting crucial portions of images.<br/>
+        • Achieved better performance than existing research through optimized fusion and tuning.
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal 3: Multi-Modal Emotion Classification (MELD) -->
+  <div class="modal" id="modal3">
+    <div class="modal-content">
+      <span class="modal-close" data-close-button>&times;</span>
+      <h2>Multi-Modal Emotion Classification on the MELD Dataset</h2>
+      <p>
+        • Used RoBERTa Large for text features & Audio Spectrogram Transformer for audio features.<br/>
+        • Preprocessed textual/audio data from the MELD dataset to enable multi-modal analysis.<br/>
+        • Implemented multiple fusion techniques (early, mid, late) including additive, multiplicative, concatenation, attention-based, majority voting, etc.<br/>
+        • Achieved better performance than the original authors using optimized fusion and feature extraction.<br/>
+        • Evaluated with standard metrics (accuracy, precision, recall, F1) showing significant improvements over baseline.
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal 4: Sentiment & Emotion Classification (MELD) -->
+  <div class="modal" id="modal4">
+    <div class="modal-content">
+      <span class="modal-close" data-close-button>&times;</span>
+      <h2>Sentiment & Emotion Classification Using Transformer Models</h2>
+      <p>
+        • Implemented emotion classification and sentiment analysis with advanced NLP techniques.<br/>
+        • Added context by incorporating up to 2 past and future utterances, boosting accuracy.<br/>
+        • Achieved robust performance with thorough testing of transformer models, capturing conversational nuances.<br/>
+        • Benchmarked against existing research, validating our approach and establishing new benchmarks.
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal 5: Cricket Score Predictor -->
+  <div class="modal" id="modal5">
+    <div class="modal-content">
+      <span class="modal-close" data-close-button>&times;</span>
+      <h2>Cricket Score Predictor using Machine Learning</h2>
+      <p>
+        • Developed a machine learning model to predict cricket scores based on historical match data.<br/>
+        • Utilized scikit-learn, NumPy, and Pandas for data preprocessing, model development, and evaluation.<br/>
+        • Selected Random Forest Regressor after comparing multiple algorithms.<br/>
+        • Achieved ~99.09% accuracy on training and ~92.70% on testing.<br/>
+        • Deployed via Streamlit, providing a user-friendly interface for real-time predictions.
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal 6: KD-tree Implementation -->
+  <div class="modal" id="modal6">
+    <div class="modal-content">
+      <span class="modal-close" data-close-button>&times;</span>
+      <h2>KD-tree Construction & Search Algorithm Development</h2>
+      <p>
+        • Implemented KD-tree construction for managing k-dimensional data attributes.<br/>
+        • Developed Exact, Range, and Nearest Neighbor search algorithms.<br/>
+        • Optimized for speed and accuracy, comparing performance against linear search.<br/>
+        • Demonstrated significant efficiency gains with KD-trees over brute-force methods.
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal 7: Employee Management Systems -->
+  <div class="modal" id="modal7">
+    <div class="modal-content">
+      <span class="modal-close" data-close-button>&times;</span>
+      <h2>Employee Management Systems Web Application</h2>
+      <p>
+        • Built with Python and Django framework.<br/>
+        • Implemented CRUD operations with Django ORM on SQLite.<br/>
+        • Designed a user-friendly UI for adding, deleting, filtering, and updating employee data.<br/>
+        • Ensured seamless data management and accessibility across the system.
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal 8: Video Game with Pygame -->
+  <div class="modal" id="modal8">
+    <div class="modal-content">
+      <span class="modal-close" data-close-button>&times;</span>
+      <h2>Video Game with Pygame</h2>
+      <p>
+        • Developed a collision-avoidance video game using Pygame.<br/>
+        • Created lane-based gameplay, integrated shapes/colors for a visually appealing interface.<br/>
+        • Implemented scoring system and level progression, adding challenge and replay value.<br/>
+        • Game ends upon collision; final score displayed to the player.
+      </p>
+    </div>
+  </div>
+
+  <!-- ======= CERTIFICATIONS SECTION ======= -->
+  <section class="certifications-section" id="certifications">
+    <div class="section-title">
+      <h2>Certifications</h2>
+      <div class="line"></div>
+    </div>
+    <div class="certifications-grid">
+      <div class="cert-card">
+        <h3>Google AI Essentials</h3>
+        <p>Nov. 2024 (Google)</p>
+      </div>
+      <div class="cert-card">
+        <h3>Deep Learning</h3>
+        <p>Nov. 2024 (Illinois Institute of Technology)</p>
+      </div>
+      <div class="cert-card">
+        <h3>Critical Thinking for Better Decisions</h3>
+        <p>Nov. 2024 (Deep Teaching Solutions)</p>
+      </div>
+      <div class="cert-card">
+        <h3>Data Science Math Skills</h3>
+        <p>Aug. 2024 (Duke University)</p>
+      </div>
+      <div class="cert-card">
+        <h3>Deep Learning Applications for Computer Vision</h3>
+        <p>Aug. 2024 (University of Colorado Boulder)</p>
+      </div>
+      <div class="cert-card">
+        <h3>Mathematics for Machine Learning: Multivariate Calculus</h3>
+        <p>Aug. 2024 (Imperial College London)</p>
+      </div>
+      <div class="cert-card">
+        <h3>Mathematics for Machine Learning: Linear Algebra</h3>
+        <p>May 2024 (Imperial College London)</p>
+      </div>
+      <div class="cert-card">
+        <h3>CS50 SQL Certificate</h3>
+        <p>Dec. 2023 (Harvard University)</p>
+      </div>
+      <div class="cert-card">
+        <h3>CS50B Certificate</h3>
+        <p>Sept. 2023 (Harvard University)</p>
+      </div>
+      <div class="cert-card">
+        <h3>CS50x Certificate</h3>
+        <p>Aug. 2023 (Harvard University)</p>
+      </div>
+      <div class="cert-card">
+        <h3>Google Data Analytics</h3>
+        <p>May 2023 (Google on Coursera)</p>
+      </div>
+      <div class="cert-card">
+        <h3>Python for Data Science & ML</h3>
+        <p>Apr. 2023 (Udemy)</p>
+      </div>
+      <div class="cert-card">
+        <h3>CS50’s Intro to Programming with Python</h3>
+        <p>Feb. 2023 (Harvard University)</p>
+      </div>
+      <div class="cert-card">
+        <h3>Programming for Everybody</h3>
+        <p>Feb. 2023 (Univ. of Michigan on Coursera)</p>
+      </div>
+      <div class="cert-card">
+        <h3>Blockchain Technology Training</h3>
+        <p>Dec. 2022 (NIELIT, Chandigarh)</p>
+      </div>
+      <div class="cert-card">
+        <h3>Introduction to HTML5</h3>
+        <p>Jan. 2022 (Univ. of Michigan on Coursera)</p>
+      </div>
+      <div class="cert-card">
+        <h3>Web Technologies Training</h3>
+        <p>Aug. 2021 (GNDEC, Ludhiana)</p>
+      </div>
+      <div class="cert-card">
+        <h3>Speak English Professionally</h3>
+        <p>July 2020 (Georgia Institute of Technology)</p>
+      </div>
+      <div class="cert-card">
+        <h3>C++ For C Programmers</h3>
+        <p>July 2020 (Univ. of California on Coursera)</p>
+      </div>
+      <div class="cert-card">
+        <h3>C for Everyone</h3>
+        <p>June 2020 (UC Santa Cruz on Coursera)</p>
+      </div>
+      <div class="cert-card">
+        <h3>Advanced CPP Training</h3>
+        <p>Mar. 2020 (IIT Bombay)</p>
+      </div>
+      <div class="cert-card">
+        <h3>C and CPP Training</h3>
+        <p>Mar. 2020 (IIT Bombay)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CONTACT SECTION ======= -->
+  <!-- ======= CONTACT SECTION ======= -->
+<section class="contact-section" id="contact">
+  <div class="section-title">
+    <h2>Contact Me</h2>
+    <div class="line"></div>
+  </div>
+  <div class="contact-content">
+    <div class="contact-info">
+      
+      <p><strong>Email:</strong> 
+        <a href="mailto:greathealthforu01@gmail.com">greathealthforu01@gmail.com</a>
+      </p>
+      <p>
+        <strong>LinkedIn:</strong> 
+        <a href="https://www.linkedin.com/in/manjot-singh-sran-ab6001273" target="_blank">LinkedIn</a>
+      </p>
+      <p>
+        <strong>GitHub:</strong> 
+        <a href="https://github.com/ManjotSran" target="_blank">GitHub</a>
+      </p>
+    </div>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
+
+
+  <!-- ======= FOOTER ======= -->
+  <footer>
+    <p>&copy; <span id="footer-year"></span> Manjot Singh Sran. Built with <span style="color:red;">♥</span>.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
